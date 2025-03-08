@@ -14,15 +14,20 @@ An OpenAI-compatible orchestration layer with enterprise-grade features includin
 ## Setup
 
 1. Clone the repository
-2. Install dependencies:
+2. Set up a virtual environment:
+   ```
+   python -m venv venv
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   ```
+3. Install dependencies:
    ```
    pip install -r requirements.txt
    ```
-3. Set up environment variables:
+4. Set up environment variables:
    ```
    cp .env.example .env
    ```
-4. Run the development server:
+5. Run the development server:
    ```
    uvicorn src.main:app --reload
    ```
